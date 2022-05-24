@@ -73,11 +73,15 @@ class _QuestionScreenState extends State<QuestionScreen> {
                 Container(
                   width: MediaQuery.of(context).size.width,
                   margin:
-                      const EdgeInsets.symmetric(horizontal: 18, vertical: 20),
+                      const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text('Question'),
+                      Text(
+                        'Question ${i + 1}',
+                        style:
+                            const TextStyle(fontSize: 16, color: Colors.blue),
+                      ),
                       Text(
                         questions[i]['question'].toString(),
                         style: const TextStyle(fontSize: 25),
