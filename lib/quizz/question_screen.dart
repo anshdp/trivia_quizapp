@@ -64,8 +64,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
 
             options.addAll(incorrectAnswers);
 
-            options.shuffle();
-
             return Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -117,8 +115,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         textStyle: const TextStyle(fontSize: 18),
                       ),
                       onPressed: () {
-                        print(correctAnswer);
-                        print(options);
                         if (correctAnswer == enteredAnswer) {
                           totalScore += 10;
                         }

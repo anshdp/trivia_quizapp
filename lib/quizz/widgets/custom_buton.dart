@@ -10,7 +10,7 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.amber,
-      width: MediaQuery.of(context).size.width - 250,
+      width: MediaQuery.of(context).size.width - 300,
       child: TextButton(
         style: TextButton.styleFrom(
           padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 15),

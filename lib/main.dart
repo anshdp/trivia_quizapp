@@ -9,20 +9,15 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       onGenerateRoute: AppRouter().onGenerateRoute,
       title: 'Flutter Demo',
       theme: ThemeData(
           appBarTheme: const AppBarTheme(
-        color: Color.fromARGB(
-          255,
-          255,
-          255,
-          255,
-        ),
+        color: Color.fromARGB(255, 255, 255, 255),
       )),
       home: HomeScreen(),
     );
